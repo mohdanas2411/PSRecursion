@@ -1,0 +1,18 @@
+import java.lang.*;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String A = sc.nextLine();
+        print(A,A.length());
+        
+    }
+    static void print(String x,int len){
+        if(len<1)
+            return;
+        System.out.print(x.charAt(len-1));
+        print(x,len-1);
+        
+    }
+}
