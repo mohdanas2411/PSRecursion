@@ -1,0 +1,11 @@
+public class Solution {
+    public int solve(int A) {
+      return sum(A);
+    }
+
+    int sum(int x){
+        if(x==0)
+            return 0;
+        return x%10+sum(x/10);
+    }
+}
